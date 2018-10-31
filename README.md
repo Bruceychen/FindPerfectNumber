@@ -1,5 +1,5 @@
 # FindPerfectNumber
-Try to re-write the program by my colleague *Mark0001*.
+Try to modify the program by my colleague *Mark0001*.
 <br>
 Still use multi-thread to find out perfect numbers, but run with different methods.
 <br>
