@@ -1,5 +1,6 @@
 # FindPerfectNumber
 Try to modify the program by my colleague *Mark0001*.
+<br>
 (Original project: https://github.com/Mark0001/FindPerfectNumber)
 <br>
 Still use multi-thread to find out perfect numbers, but run with different methods.
