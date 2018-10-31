@@ -5,12 +5,14 @@ import java.util.List;
 
 public class Main {
 
+
     private static List<Integer> rank = new ArrayList<>();
 
     public static synchronized void addRank(final int number) {
         rank.add(number);
     }
 
+    //use single Thread to run. Remain the original design by Mark. 
     public static void main(final String[] args) {
         final long start = System.currentTimeMillis();
         final Worker w1 = new Worker(1, 8000000);
