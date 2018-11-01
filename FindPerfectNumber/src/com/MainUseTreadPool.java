@@ -10,7 +10,9 @@ public class MainUseTreadPool {
 
     private static List<Integer> resultList = new ArrayList<>();
 
-    private static int interval = 2000000;
+    private static int interval = 10000;
+//    private static int interval = 2;
+//    private static int interval = 2000000;
 //    private static int interval = 30;
 //        private static int max = 34000000;
     private static int max = 8000000;
@@ -25,7 +27,7 @@ public class MainUseTreadPool {
         final int availableProcessors = Runtime.getRuntime().availableProcessors();
         
         // 不想用100% cpu跑
-        final int usedProcessors =availableProcessors -2;
+        final int usedProcessors =availableProcessors -0;
         
         System.out.println("我可以使用的邏輯處理器" + Runtime.getRuntime().availableProcessors());
         System.out.println("這次使用"+ usedProcessors +"個邏輯處理器");
@@ -53,7 +55,7 @@ public class MainUseTreadPool {
             final long end = System.currentTimeMillis();
 
             System.out.println("結束應用");
-            System.out.println("共用了" + (end - start)/1000 + "秒");
+            System.out.println("共用了" + (end - start) + "毫秒");
         }
 
     }
